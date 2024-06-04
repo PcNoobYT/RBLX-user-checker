@@ -18,7 +18,7 @@ def main():
         os.system("cls")
 
         def generate_random_strings(num_strings, length):
-            return [''.join(random.choices(string.ascii_lowercase, k=length)) for _ in range(num_strings)]
+            return [''.join(random.choices(string.ascii_lowercase + string.digits, k=length)) for _ in range(num_strings)]
 
         amount = int(input("How many usernames would you like to generate: "))
         length = int(input("How many letters would you like the username to be: "))
